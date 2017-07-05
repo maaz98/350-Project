@@ -33,16 +33,16 @@ public class CarRentalFrame extends javax.swing.JFrame {
         SearchCar = new javax.swing.JButton();
         RentCarButton = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        FindCarTable = new javax.swing.JTable();
         jPanel2 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jTable2 = new javax.swing.JTable();
+        RentedCarTable = new javax.swing.JTable();
         ReturnCarButton = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jPanel5 = new javax.swing.JPanel();
         jScrollPane3 = new javax.swing.JScrollPane();
-        jTable3 = new javax.swing.JTable();
+        ReturnedCarTable = new javax.swing.JTable();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -56,7 +56,7 @@ public class CarRentalFrame extends javax.swing.JFrame {
 
         RentCarButton.setText("Rent Car");
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        FindCarTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null},
                 {null, null, null, null, null, null},
@@ -67,7 +67,7 @@ public class CarRentalFrame extends javax.swing.JFrame {
                 "Select", "ID", "Make", "Model", "Year", "Size"
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(FindCarTable);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -104,7 +104,7 @@ public class CarRentalFrame extends javax.swing.JFrame {
 
         RentalStatusTab.addTab("Find Car", jPanel1);
 
-        jTable2.setModel(new javax.swing.table.DefaultTableModel(
+        RentedCarTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
                 {null, null, null, null, null},
@@ -115,7 +115,7 @@ public class CarRentalFrame extends javax.swing.JFrame {
                 "Select", "Make", "Model", "Year", "Rented"
             }
         ));
-        jScrollPane2.setViewportView(jTable2);
+        jScrollPane2.setViewportView(RentedCarTable);
 
         ReturnCarButton.setText("Return Selected");
 
@@ -156,7 +156,7 @@ public class CarRentalFrame extends javax.swing.JFrame {
 
         RentalStatusTab.addTab("Rented Cars", jPanel2);
 
-        jTable3.setModel(new javax.swing.table.DefaultTableModel(
+        ReturnedCarTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null},
                 {null, null, null, null, null, null},
@@ -167,7 +167,7 @@ public class CarRentalFrame extends javax.swing.JFrame {
                 "ID", "Make", "Model", "Year", "Rented", "Returned"
             }
         ));
-        jScrollPane3.setViewportView(jTable3);
+        jScrollPane3.setViewportView(ReturnedCarTable);
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -264,9 +264,12 @@ public class CarRentalFrame extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField FindCarSearch;
+    private javax.swing.JTable FindCarTable;
     private javax.swing.JButton RentCarButton;
     private javax.swing.JTabbedPane RentalStatusTab;
+    private javax.swing.JTable RentedCarTable;
     private javax.swing.JButton ReturnCarButton;
+    private javax.swing.JTable ReturnedCarTable;
     private javax.swing.JButton SearchCar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
@@ -277,8 +280,5 @@ public class CarRentalFrame extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
-    private javax.swing.JTable jTable1;
-    private javax.swing.JTable jTable2;
-    private javax.swing.JTable jTable3;
     // End of variables declaration//GEN-END:variables
 }

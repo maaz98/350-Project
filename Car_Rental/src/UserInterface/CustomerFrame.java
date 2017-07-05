@@ -9,12 +9,17 @@ package UserInterface;
  *
  * @author Shazam
  */
+
+
+
 public class CustomerFrame extends javax.swing.JFrame {
 
+    CarRentalFrame carRentalFrame; 
     /**
      * Creates new form CustomerFrame
      */
     public CustomerFrame() {
+        this.carRentalFrame = new CarRentalFrame(); 
         initComponents();
     }
 
@@ -39,6 +44,11 @@ public class CustomerFrame extends javax.swing.JFrame {
         SearchButton.setText("Search");
 
         RentCarButton.setText("Rent Car");
+        RentCarButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RentCarButtonActionPerformed(evt);
+            }
+        });
 
         Rented_CarsButton.setText("Rented Car");
 
@@ -96,6 +106,15 @@ public class CustomerFrame extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void RentCarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RentCarButtonActionPerformed
+        // TODO add your handling code here:
+        
+        
+        
+        
+        this.carRentalFrame.setVisible(true);
+    }//GEN-LAST:event_RentCarButtonActionPerformed
 
     /**
      * @param args the command line arguments
