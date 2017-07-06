@@ -10,5 +10,15 @@ package Business_logic;
  * @author Shazam
  */
 public class CarSpec {
+    private String make;
+    private String model;
+    private int year;
+    
+    
+    
+    public enum size{
+    
+    }
+    
     
 }

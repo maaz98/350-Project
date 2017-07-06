@@ -10,5 +10,9 @@ package Business_logic;
  * @author Shazam
  */
 public class Car {
+    private String ID;
     
+    public Car(){
+        this.ID = ID;
+    }
 }
