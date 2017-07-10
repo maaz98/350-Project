@@ -7,16 +7,9 @@ package Business_logic;
 
 /**
  *
- * @author Shazam
+ * @author jaremylongley
  */
-public class Car {
-    private int ID;
-
-    public Car(int ID) {
-        this.ID = ID;
-    }
-
-    public int getID() {
-        return ID;
-    }
+public enum Status {
+    rented,
+    returned,
 }
