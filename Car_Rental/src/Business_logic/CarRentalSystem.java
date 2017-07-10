@@ -9,6 +9,8 @@ package Business_logic;
  *
  * @author Shazam
  */
+
+//Main Class that talks to other classes
 public class CarRentalSystem {
     
 }

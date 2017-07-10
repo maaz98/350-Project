@@ -19,4 +19,9 @@ public class Car {
     public int getID() {
         return ID;
     }
+    private String ID;
+    
+    public Car(){
+        this.ID = ID;
+    }
 }

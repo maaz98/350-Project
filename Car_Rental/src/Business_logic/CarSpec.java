@@ -36,6 +36,11 @@ public class CarSpec {
 
     public Size getSize() {
         return size;
+    
+    
+    
+    public enum size{
+    
     }
     
     
