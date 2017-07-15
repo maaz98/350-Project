@@ -9,7 +9,8 @@ package Business_logic;
  *
  * @author jaremylongley
  */
-public enum Status {
-    rented,
-    returned,
+public enum Size {
+    small,
+    midsize,
+    large
 }

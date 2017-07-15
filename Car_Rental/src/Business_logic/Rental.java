@@ -35,10 +35,6 @@ public class Rental {
     public void Rent(Calendar date) {
         this.rentDate = date;
         this.status = Status.rented;
-
-    public Rental(Calendar rentDate, Calendar returnDate) {
-        this.rentDate = rentDate;
-        this.returnDate = returnDate;
     }
     
     public void Return(Calendar date) {

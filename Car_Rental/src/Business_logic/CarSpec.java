@@ -13,12 +13,29 @@ public class CarSpec {
     private String make;
     private String model;
     private int year;
-    
-    
-    
-    public enum size{
-    
+    private Size size;
+
+    public CarSpec(String make, String model, int year, Size size) {
+        this.make = make;
+        this.model = model;
+        this.year = year;
+        this.size = size;
     }
-    
-    
+
+    public String getMake() {
+        return make;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public Size getSize() {
+        return size;
+    }
+       
 }
