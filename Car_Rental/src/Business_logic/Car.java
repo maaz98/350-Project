@@ -11,8 +11,10 @@ package Business_logic;
  */
 public class Car {
     private String ID;
+    private CarSpec spec;
     
-    public Car(){
+    public Car(String ID, CarSpec spec){
         this.ID = ID;
+        this.spec = spec;
     }
 }
