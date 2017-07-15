@@ -32,13 +32,13 @@ public class Rental {
         return this.status;
     }
     
-    public void Rent(Calendar date) {
-        this.rentDate = date;
+    public void rentCar() {
+        this.rentDate = Calendar.getInstance();
         this.status = Status.rented;
     }
     
-    public void Return(Calendar date) {
-        this.returnDate = date;
+    public void returnCar() {
+        this.returnDate = Calendar.getInstance();
         this.status = Status.returned;
     }
 }
